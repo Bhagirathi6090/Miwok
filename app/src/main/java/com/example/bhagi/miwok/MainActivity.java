@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // Start the new activity
                 startActivity(numbersIntent);
+                finish();
             }
         });
 
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // Start the new activity
                 startActivity(familyIntent);
+                finish();
             }
         });
 
@@ -58,11 +60,12 @@ public class MainActivity extends AppCompatActivity {
 
                 // Start the new activity
                 startActivity(colorsIntent);
+                finish();
             }
         });
 
         // Find the View that shows the phrases category
-        TextView phrases =  findViewById(R.id.phrases);
+        TextView phrases = findViewById(R.id.phrases);
 
         // Set a click listener on that View
         phrases.setOnClickListener(new View.OnClickListener() {
@@ -74,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // Start the new activity
                 startActivity(phrasesIntent);
+                finish();
             }
         });
     }

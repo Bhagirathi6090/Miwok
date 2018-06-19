@@ -27,7 +27,6 @@ public class WordAdapter extends ArrayAdapter<Word> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         Word word = getItem(position);
 
-
         if(convertView == null){
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item,parent,false);
         }
@@ -35,8 +34,6 @@ public class WordAdapter extends ArrayAdapter<Word> {
         TextView defaultView = convertView.findViewById(R.id.default_translation);
         TextView miwokView = convertView.findViewById(R.id.miwok_translation);
         ImageView imageView = convertView.findViewById(R.id.imageView);
-
-
 
         if(word.hasImage()){
             imageView.setImageResource(word.getImageResourceid());
