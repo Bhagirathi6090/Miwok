@@ -6,6 +6,8 @@
         <item name="colorPrimary">#4A312A</item>
         <item name="colorPrimaryDark">#4A312A</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="elevation">0dp</item>
     </style>
 
 
@@ -22,5 +24,17 @@
     <style name="CustomTextView">
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Style for a tab that displays a category name -->
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+    </style>
+
+    <!-- Text appearance style for a category tab -->
+    <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#A8A19E</item>
     </style>
 </resources>

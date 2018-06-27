@@ -36,11 +36,13 @@ public class WordAdapter extends ArrayAdapter<Word> {
         ImageView imageView = convertView.findViewById(R.id.imageView);
 
         if(word.hasImage()){
-            imageView.setImageResource(word.getImageResourceid());
+            imageView.setImageResource(word.getImageResourceId());
             imageView.setVisibility(View.VISIBLE);
         }else{
             imageView.setVisibility(View.GONE);
         }
+
+
 
         defaultView.setText(word.getDefaultTranslation());
         miwokView.setText(word.getmMiwokTranslation());

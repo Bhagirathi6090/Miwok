@@ -34,7 +34,7 @@ public class Word {
         return mMiwokTranslation;
     }
 
-    public int getImageResourceid() {
+    public int getImageResourceId() {
         return imageResourceId;
     }
 
